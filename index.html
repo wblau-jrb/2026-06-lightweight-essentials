@@ -12,28 +12,12 @@
 <![endif]-->
 <style type="text/css">
   @font-face {
-    font-family: 'Canela'; font-style: normal; font-weight: 200;
-    src: url('https://www.jonesroadbeauty.com/cdn/shop/t/785/assets/canela-thin.static.woff2') format('woff2');
-  }
-  @font-face {
-    font-family: 'Canela'; font-style: italic; font-weight: 200;
-    src: url('https://www.jonesroadbeauty.com/cdn/shop/t/785/assets/canela-thin-italic.static.woff2') format('woff2');
-  }
-  @font-face {
-    font-family: 'Canela'; font-style: normal; font-weight: 300;
-    src: url('https://www.jonesroadbeauty.com/cdn/shop/t/785/assets/canela-light.static.woff2') format('woff2');
-  }
-  @font-face {
-    font-family: 'Canela'; font-style: italic; font-weight: 300;
-    src: url('https://www.jonesroadbeauty.com/cdn/shop/t/785/assets/canela-light-italic.static.woff2') format('woff2');
-  }
-  @font-face {
     font-family: 'ArticulatCF'; font-style: normal; font-weight: 400;
-    src: url('https://use.typekit.net/af/2c0cee/000000000000000077524f49/31/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3') format('woff2');
+    src: url('https://jrb-email-assets.vercel.app/fonts/articulatcf-regular.woff2') format('woff2');
   }
   @font-face {
     font-family: 'ArticulatCF'; font-style: normal; font-weight: 700;
-    src: url('https://use.typekit.net/af/df7eab/000000000000000077524f45/31/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3') format('woff2');
+    src: url('https://jrb-email-assets.vercel.app/fonts/articulatcf-bold.woff2') format('woff2');
   }
 
   html, body { margin:0 !important; padding:0 !important; height:100% !important; width:100% !important; }
@@ -50,16 +34,14 @@
   /* Layout is fluid-hybrid (inline-block cols, width:100% + max-width) and works without media queries.
      The block below is progressive enhancement only: full-bleed images, type scale, centering. */
   @media screen and (max-width: 620px) {
-    .hero-bg { height:600px !important; background-image:url('https://air-prod.imgix.net/d7bc717e-e49e-48e3-96c9-2013ae9f2f29.jpg?rect=0,0,4480,5077&w=1200&h=2480&fit=fill&fill=blur&auto=format&q=80') !important; }
     .col-img, .col-text { max-width:100% !important; }
     .mobile-pad { padding-left:24px !important; padding-right:24px !important; }
-    .h-hero { font-size:38px !important; line-height:44px !important; }
-    .h-section { font-size:32px !important; line-height:38px !important; }
     .img-full { width:100% !important; max-width:100% !important; height:auto !important; }
     .img-product { width:180px !important; height:auto !important; }
     .m-body { font-size:16px !important; line-height:22px !important; }
     .btn-cta { font-size:16px !important; }
     .m-center { text-align:center !important; }
+    .img-name { margin-left:auto !important; margin-right:auto !important; }
     .m-center-table { margin:0 auto !important; float:none !important; }
     .m-pad-top { padding-top:24px !important; }
   }
@@ -77,39 +59,12 @@
       <!--[if mso]><table role="presentation" width="600" cellpadding="0" cellspacing="0" border="0"><tr><td><![endif]-->
       <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="width:100%; max-width:600px;">
 
-        <!-- ===== HERO: bulletproof background image — logo + headline are live text ON the image (no band/image seam). VML fallback for Outlook; bgcolor fallback when images are blocked. ===== -->
+        <!-- ===== HERO: flattened image — wall + logo + Canela headline baked in (seamless by construction; brand fonts in EVERY client incl. Gmail) ===== -->
         <tr>
-          <td class="hero-bg" background="https://air-prod.imgix.net/d7bc717e-e49e-48e3-96c9-2013ae9f2f29.jpg?rect=0,0,4480,5077&amp;w=1200&amp;h=2120&amp;fit=fill&amp;fill=blur&amp;auto=format&amp;q=80" bgcolor="#E9E9EA" valign="top" style="background-image:url('https://air-prod.imgix.net/d7bc717e-e49e-48e3-96c9-2013ae9f2f29.jpg?rect=0,0,4480,5077&amp;w=1200&amp;h=2120&amp;fit=fill&amp;fill=blur&amp;auto=format&amp;q=80'); background-color:#E9E9EA; background-repeat:no-repeat; background-position:center top; background-size:100% auto; height:870px;">
-            <!--[if gte mso 9]>
-            <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:600px;height:870px;">
-            <v:fill type="frame" aspect="atleast" src="https://air-prod.imgix.net/d7bc717e-e49e-48e3-96c9-2013ae9f2f29.jpg?rect=0,0,4480,5077&amp;w=1200&amp;h=2120&amp;fit=fill&amp;fill=blur&amp;q=80" color="#E9E9EA" />
-            <v:textbox inset="0,0,0,0">
-            <![endif]-->
-            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
-              <tr>
-                <td align="center" style="padding:32px 0 26px 0;">
-                  <a href="https://www.jonesroadbeauty.com/?utm_source=klaviyo&amp;utm_medium=email&amp;utm_campaign=2026-06-lightweight-essentials" target="_blank">
-                    <img src="https://air-prod.imgix.net/ec8947f1-6b18-4b50-be0a-4b9d7218b447.jpg?fm=png&amp;bg-remove=true&amp;w=434" alt="Jones Road" width="217" style="width:217px; height:auto; display:block; border:0;" />
-                  </a>
-                </td>
-              </tr>
-              <tr>
-                <td align="center" class="mobile-pad" style="padding:0 48px;">
-                  <p class="h-hero" style="margin:0; font-family:'Canela',Georgia,'Times New Roman',serif; font-weight:200; font-size:50px; line-height:55px; color:#000000; text-transform:capitalize; text-align:center;">
-                    your <em style="font-style:italic; font-weight:200;">transition</em><br />makeup&nbsp;bag
-                  </p>
-                </td>
-              </tr>
-              <tr>
-                <td style="height:370px;">
-                  <a href="https://www.jonesroadbeauty.com/?utm_source=klaviyo&amp;utm_medium=email&amp;utm_campaign=2026-06-lightweight-essentials" target="_blank" style="display:block; height:370px; font-size:0; line-height:0;" aria-hidden="true">&nbsp;</a>
-                </td>
-              </tr>
-            </table>
-            <!--[if gte mso 9]>
-            </v:textbox>
-            </v:rect>
-            <![endif]-->
+          <td>
+            <a href="https://www.jonesroadbeauty.com/?utm_source=klaviyo&amp;utm_medium=email&amp;utm_campaign=2026-06-lightweight-essentials" target="_blank">
+              <img src="https://jrb-email-assets.vercel.app/emails/2026-06-lightweight-essentials/hero.jpg" alt="Jones Road &mdash; Your Transition Makeup Bag" width="600" class="img-full" style="width:100%; max-width:600px; height:auto; display:block;" />
+            </a>
           </td>
         </tr>
 
@@ -145,7 +100,7 @@
               </div><!--[if mso]></td><td width="310" valign="middle"><![endif]--><div class="col-text m-pad-top" style="display:inline-block; width:100%; max-width:310px; vertical-align:middle; font-size:18px;">
                 <div class="mobile-pad" style="padding:0 24px; text-align:left;">
                   <p class="m-center" style="margin:0 0 14px 0; font-family:'ArticulatCF','Helvetica Neue',Helvetica,Arial,sans-serif; font-weight:600; font-size:20px; line-height:25px; letter-spacing:0.6px; text-transform:uppercase; color:#F50A99; text-align:left;">The&nbsp;Base</p>
-                  <p class="h-section m-center" style="margin:0 0 16px 0; font-family:'Canela',Georgia,'Times New Roman',serif; font-weight:200; font-size:35px; line-height:40px; color:#000000; text-transform:capitalize; text-align:left;">Just Enough Tinted&nbsp;Moisturizer</p>
+                  <a href="https://www.jonesroadbeauty.com/products/just-enough-tinted-moisturizer?utm_source=klaviyo&amp;utm_medium=email&amp;utm_campaign=2026-06-lightweight-essentials" target="_blank"><img src="https://jrb-email-assets.vercel.app/emails/2026-06-lightweight-essentials/name-jetm.png" alt="Just Enough Tinted Moisturizer" width="262" class="img-name" style="width:262px; max-width:100%; height:auto; display:block; margin:0 0 16px 0;" /></a>
                   <p class="m-center m-body" style="margin:0 0 28px 0; font-family:'ArticulatCF','Helvetica Neue',Helvetica,Arial,sans-serif; font-weight:400; font-size:18px; line-height:25px; letter-spacing:0.54px; color:#000000; text-align:left;">
                     Lightweight coverage that evens skin tone and hides redness &mdash; and feels like nothing on your skin, even in the&nbsp;heat.
                   </p>
@@ -173,7 +128,7 @@
               </div><!--[if mso]></td><td width="310" valign="middle" dir="ltr"><![endif]--><div class="col-text m-pad-top" dir="ltr" style="display:inline-block; width:100%; max-width:310px; vertical-align:middle; font-size:18px;">
                 <div class="mobile-pad" style="padding:0 24px; text-align:left;">
                   <p class="m-center" style="margin:0 0 14px 0; font-family:'ArticulatCF','Helvetica Neue',Helvetica,Arial,sans-serif; font-weight:600; font-size:20px; line-height:25px; letter-spacing:0.6px; text-transform:uppercase; color:#F50A99; text-align:left;">The&nbsp;Flush</p>
-                  <p class="h-section m-center" style="margin:0 0 16px 0; font-family:'Canela',Georgia,'Times New Roman',serif; font-weight:200; font-size:35px; line-height:40px; color:#000000; text-transform:capitalize; text-align:left;">Blushing&nbsp;Stick</p>
+                  <a href="https://www.jonesroadbeauty.com/products/blushing-stick?utm_source=klaviyo&amp;utm_medium=email&amp;utm_campaign=2026-06-lightweight-essentials" target="_blank"><img src="https://jrb-email-assets.vercel.app/emails/2026-06-lightweight-essentials/name-blushing-stick.png" alt="Blushing Stick" width="262" class="img-name" style="width:262px; max-width:100%; height:auto; display:block; margin:0 0 16px 0;" /></a>
                   <p class="m-center m-body" style="margin:0 0 28px 0; font-family:'ArticulatCF','Helvetica Neue',Helvetica,Arial,sans-serif; font-weight:400; font-size:18px; line-height:25px; letter-spacing:0.54px; color:#000000; text-align:left;">
                     A buttery lip-and-cheek tint that starts light and builds naturally. Blend with your fingertips and you&rsquo;re done &mdash; seconds, not&nbsp;minutes.
                   </p>
@@ -201,7 +156,7 @@
               </div><!--[if mso]></td><td width="310" valign="middle"><![endif]--><div class="col-text m-pad-top" style="display:inline-block; width:100%; max-width:310px; vertical-align:middle; font-size:18px;">
                 <div class="mobile-pad" style="padding:0 24px; text-align:left;">
                   <p class="m-center" style="margin:0 0 14px 0; font-family:'ArticulatCF','Helvetica Neue',Helvetica,Arial,sans-serif; font-weight:600; font-size:20px; line-height:25px; letter-spacing:0.6px; text-transform:uppercase; color:#F50A99; text-align:left;">The&nbsp;Eye</p>
-                  <p class="h-section m-center" style="margin:0 0 16px 0; font-family:'Canela',Georgia,'Times New Roman',serif; font-weight:200; font-size:35px; line-height:40px; color:#000000; text-transform:capitalize; text-align:left;">Just A&nbsp;Sec</p>
+                  <a href="https://www.jonesroadbeauty.com/products/just-a-sec?utm_source=klaviyo&amp;utm_medium=email&amp;utm_campaign=2026-06-lightweight-essentials" target="_blank"><img src="https://jrb-email-assets.vercel.app/emails/2026-06-lightweight-essentials/name-just-a-sec.png" alt="Just A Sec" width="262" class="img-name" style="width:262px; max-width:100%; height:auto; display:block; margin:0 0 16px 0;" /></a>
                   <p class="m-center m-body" style="margin:0 0 28px 0; font-family:'ArticulatCF','Helvetica Neue',Helvetica,Arial,sans-serif; font-weight:400; font-size:18px; line-height:25px; letter-spacing:0.54px; color:#000000; text-align:left;">
                     Weightless, cushiony color for lids, inner corners, and brow bone. A luminous wash that brightens &mdash; the easiest eye of the&nbsp;summer.
                   </p>
@@ -229,7 +184,7 @@
               </div><!--[if mso]></td><td width="310" valign="middle" dir="ltr"><![endif]--><div class="col-text m-pad-top" dir="ltr" style="display:inline-block; width:100%; max-width:310px; vertical-align:middle; font-size:18px;">
                 <div class="mobile-pad" style="padding:0 24px; text-align:left;">
                   <p class="m-center" style="margin:0 0 14px 0; font-family:'ArticulatCF','Helvetica Neue',Helvetica,Arial,sans-serif; font-weight:600; font-size:20px; line-height:25px; letter-spacing:0.6px; text-transform:uppercase; color:#F50A99; text-align:left;">The&nbsp;Lip</p>
-                  <p class="h-section m-center" style="margin:0 0 16px 0; font-family:'Canela',Georgia,'Times New Roman',serif; font-weight:200; font-size:35px; line-height:40px; color:#000000; text-transform:capitalize; text-align:left;">Lip&nbsp;Recharge</p>
+                  <a href="https://www.jonesroadbeauty.com/products/lip-recharge?utm_source=klaviyo&amp;utm_medium=email&amp;utm_campaign=2026-06-lightweight-essentials" target="_blank"><img src="https://jrb-email-assets.vercel.app/emails/2026-06-lightweight-essentials/name-lip-recharge.png" alt="Lip Recharge" width="262" class="img-name" style="width:262px; max-width:100%; height:auto; display:block; margin:0 0 16px 0;" /></a>
                   <p class="m-center m-body" style="margin:0 0 28px 0; font-family:'ArticulatCF','Helvetica Neue',Helvetica,Arial,sans-serif; font-weight:400; font-size:18px; line-height:25px; letter-spacing:0.54px; color:#000000; text-align:left;">
                     Tint, shine, and treatment in one &mdash; moisture-boosting peptides, antioxidants, and a cooling touch. It earns the permanent spot in your&nbsp;bag.
                   </p>
@@ -257,9 +212,7 @@
         <!-- ===== FOOTER EDIT MODULE ===== -->
         <tr>
           <td bgcolor="#F8F8F8" align="center" class="mobile-pad" style="padding:48px 60px 56px 60px;">
-            <p class="h-section" style="margin:0 0 18px 0; font-family:'Canela',Georgia,'Times New Roman',serif; font-weight:200; font-size:38px; line-height:44px; color:#000000; text-transform:capitalize; text-align:center;">
-              the summer essentials&nbsp;edit
-            </p>
+            <a href="https://www.jonesroadbeauty.com/collections/shop-all?utm_source=klaviyo&amp;utm_medium=email&amp;utm_campaign=2026-06-lightweight-essentials" target="_blank"><img src="https://jrb-email-assets.vercel.app/emails/2026-06-lightweight-essentials/footer-headline.png" alt="the summer essentials edit" width="480" style="width:480px; max-width:100%; height:auto; display:block; margin:0 auto 18px auto;" /></a>
             <p class="m-body" style="margin:0 0 32px 0; font-family:'ArticulatCF','Helvetica Neue',Helvetica,Arial,sans-serif; font-weight:400; font-size:18px; line-height:25px; letter-spacing:0.54px; color:#000000; text-align:center;">
               Everything you need for an easy, polished look &mdash; and nothing you&nbsp;don&rsquo;t.
             </p>
