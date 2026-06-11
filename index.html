@@ -39,13 +39,14 @@
      narrow ~560px reading pane (e.g. Gmail desktop preview) and only stacks below that. */
   @media screen and (max-width: 559px) {
     .col-img, .col-text { max-width:100% !important; }
-    .mobile-pad { padding-left:24px !important; padding-right:24px !important; }
+    .mobile-pad { padding-left:24px !important; padding-right:24px !important; text-align:center !important; }
     .img-full { width:100% !important; max-width:100% !important; height:auto !important; }
     .img-product { width:180px !important; height:auto !important; }
     .m-body { font-size:16px !important; line-height:22px !important; }
     .btn-cta { font-size:16px !important; }
     .m-center { text-align:center !important; }
-    .img-name { margin-left:auto !important; margin-right:auto !important; }
+    /* Gmail mobile ignores margin:auto on block images — center via text-align + inline-block instead */
+    .img-name { display:inline-block !important; margin-left:auto !important; margin-right:auto !important; }
     .m-center-table { margin:0 auto !important; float:none !important; }
     .m-pad-top { padding-top:24px !important; }
   }
