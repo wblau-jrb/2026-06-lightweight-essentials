@@ -32,8 +32,12 @@
   .btn-cta:hover { background-color:#FFFFFF !important; border-color:#D0D0D0 !important; color:#000000 !important; }
 
   /* Layout is fluid-hybrid (inline-block cols, width:100% + max-width) and works without media queries.
-     The block below is progressive enhancement only: full-bleed images, type scale, centering. */
-  @media screen and (max-width: 599px) {
+     The block below is progressive enhancement only: full-bleed images, type scale, centering.
+     Columns are 240 (img) + 310 (text) = 550px. The text column can't go below 310px — the
+     "SHOP BLUSHING STICK" button and the 262px product-name images are nowrap/fixed. Breakpoint is
+     559px (just below the ~560px two-column threshold) so the email holds two columns down to a
+     narrow ~560px reading pane (e.g. Gmail desktop preview) and only stacks below that. */
+  @media screen and (max-width: 559px) {
     .col-img, .col-text { max-width:100% !important; }
     .mobile-pad { padding-left:24px !important; padding-right:24px !important; }
     .img-full { width:100% !important; max-width:100% !important; height:auto !important; }
@@ -94,9 +98,9 @@
         <tr>
           <td bgcolor="#F8F8F8" style="background-color:#F8F8F8; padding:56px 0 28px 0;">
             <div style="width:100%; text-align:center; font-size:0;">
-              <!--[if mso]><table role="presentation" width="600" cellpadding="0" cellspacing="0" border="0"><tr><td width="290" valign="middle"><![endif]-->
-              <div class="col-img" style="display:inline-block; width:100%; max-width:290px; vertical-align:middle;">
-                <a href="https://www.jonesroadbeauty.com/products/just-enough-tinted-moisturizer?utm_source=klaviyo&amp;utm_medium=email&amp;utm_campaign=2026-06-lightweight-essentials" target="_blank"><img src="https://air-prod.imgix.net/248ade92-bd04-4e58-bfff-74cc304a1ccc.jpg?fm=png&amp;bg-remove=true&amp;w=540&amp;h=540&amp;fit=fill&amp;fill=solid&amp;fill-color=00FFFFFF" alt="Just Enough Tinted Moisturizer" width="290" height="290" class="img-product" style="width:100%; max-width:290px; height:auto; display:block; margin:0 auto;" /></a>
+              <!--[if mso]><table role="presentation" width="550" align="center" cellpadding="0" cellspacing="0" border="0"><tr><td width="240" valign="middle"><![endif]-->
+              <div class="col-img" style="display:inline-block; width:100%; max-width:240px; vertical-align:middle;">
+                <a href="https://www.jonesroadbeauty.com/products/just-enough-tinted-moisturizer?utm_source=klaviyo&amp;utm_medium=email&amp;utm_campaign=2026-06-lightweight-essentials" target="_blank"><img src="https://air-prod.imgix.net/248ade92-bd04-4e58-bfff-74cc304a1ccc.jpg?fm=png&amp;bg-remove=true&amp;w=540&amp;h=540&amp;fit=fill&amp;fill=solid&amp;fill-color=00FFFFFF" alt="Just Enough Tinted Moisturizer" width="240" height="240" class="img-product" style="width:100%; max-width:240px; height:auto; display:block; margin:0 auto;" /></a>
               </div><!--[if mso]></td><td width="310" valign="middle"><![endif]--><div class="col-text m-pad-top" style="display:inline-block; width:100%; max-width:310px; vertical-align:middle; font-size:18px;">
                 <div class="mobile-pad" style="padding:0 24px; text-align:left;">
                   <p class="m-center" style="margin:0 0 14px 0; font-family:'ArticulatCF','Helvetica Neue',Helvetica,Arial,sans-serif; font-weight:600; font-size:20px; line-height:25px; letter-spacing:0.6px; text-transform:uppercase; color:#F50A99; text-align:left;">The&nbsp;Base</p>
@@ -122,9 +126,9 @@
         <tr>
           <td bgcolor="#F8F8F8" style="background-color:#F8F8F8; padding:28px 0;">
             <div dir="rtl" style="width:100%; text-align:center; font-size:0;">
-              <!--[if mso]><table role="presentation" width="600" cellpadding="0" cellspacing="0" border="0" dir="rtl"><tr><td width="290" valign="middle" dir="ltr"><![endif]-->
-              <div class="col-img" dir="ltr" style="display:inline-block; width:100%; max-width:290px; vertical-align:middle;">
-                <a href="https://www.jonesroadbeauty.com/products/blushing-stick?utm_source=klaviyo&amp;utm_medium=email&amp;utm_campaign=2026-06-lightweight-essentials" target="_blank"><img src="https://air-prod.imgix.net/17d46a73-c080-469b-aeb2-14d09335e751.jpg?fm=png&amp;bg-remove=true&amp;w=540&amp;h=540&amp;fit=fill&amp;fill=solid&amp;fill-color=00FFFFFF" alt="Blushing Stick in Flush" width="290" height="290" class="img-product" style="width:100%; max-width:290px; height:auto; display:block; margin:0 auto;" /></a>
+              <!--[if mso]><table role="presentation" width="550" align="center" cellpadding="0" cellspacing="0" border="0" dir="rtl"><tr><td width="240" valign="middle" dir="ltr"><![endif]-->
+              <div class="col-img" dir="ltr" style="display:inline-block; width:100%; max-width:240px; vertical-align:middle;">
+                <a href="https://www.jonesroadbeauty.com/products/blushing-stick?utm_source=klaviyo&amp;utm_medium=email&amp;utm_campaign=2026-06-lightweight-essentials" target="_blank"><img src="https://air-prod.imgix.net/17d46a73-c080-469b-aeb2-14d09335e751.jpg?fm=png&amp;bg-remove=true&amp;w=540&amp;h=540&amp;fit=fill&amp;fill=solid&amp;fill-color=00FFFFFF" alt="Blushing Stick in Flush" width="240" height="240" class="img-product" style="width:100%; max-width:240px; height:auto; display:block; margin:0 auto;" /></a>
               </div><!--[if mso]></td><td width="310" valign="middle" dir="ltr"><![endif]--><div class="col-text m-pad-top" dir="ltr" style="display:inline-block; width:100%; max-width:310px; vertical-align:middle; font-size:18px;">
                 <div class="mobile-pad" style="padding:0 24px; text-align:left;">
                   <p class="m-center" style="margin:0 0 14px 0; font-family:'ArticulatCF','Helvetica Neue',Helvetica,Arial,sans-serif; font-weight:600; font-size:20px; line-height:25px; letter-spacing:0.6px; text-transform:uppercase; color:#F50A99; text-align:left;">The&nbsp;Flush</p>
@@ -150,9 +154,9 @@
         <tr>
           <td bgcolor="#F8F8F8" style="background-color:#F8F8F8; padding:28px 0;">
             <div style="width:100%; text-align:center; font-size:0;">
-              <!--[if mso]><table role="presentation" width="600" cellpadding="0" cellspacing="0" border="0"><tr><td width="290" valign="middle"><![endif]-->
-              <div class="col-img" style="display:inline-block; width:100%; max-width:290px; vertical-align:middle;">
-                <a href="https://www.jonesroadbeauty.com/products/just-a-sec?utm_source=klaviyo&amp;utm_medium=email&amp;utm_campaign=2026-06-lightweight-essentials" target="_blank"><img src="https://air-prod.imgix.net/9f573551-c3b8-45d9-bb3b-d79b654e06f7.jpg?fm=png&amp;bg-remove=true&amp;w=540&amp;h=540&amp;fit=fill&amp;fill=solid&amp;fill-color=00FFFFFF" alt="Just A Sec in Baby Pink" width="290" height="290" class="img-product" style="width:100%; max-width:290px; height:auto; display:block; margin:0 auto;" /></a>
+              <!--[if mso]><table role="presentation" width="550" align="center" cellpadding="0" cellspacing="0" border="0"><tr><td width="240" valign="middle"><![endif]-->
+              <div class="col-img" style="display:inline-block; width:100%; max-width:240px; vertical-align:middle;">
+                <a href="https://www.jonesroadbeauty.com/products/just-a-sec?utm_source=klaviyo&amp;utm_medium=email&amp;utm_campaign=2026-06-lightweight-essentials" target="_blank"><img src="https://air-prod.imgix.net/9f573551-c3b8-45d9-bb3b-d79b654e06f7.jpg?fm=png&amp;bg-remove=true&amp;w=540&amp;h=540&amp;fit=fill&amp;fill=solid&amp;fill-color=00FFFFFF" alt="Just A Sec in Baby Pink" width="240" height="240" class="img-product" style="width:100%; max-width:240px; height:auto; display:block; margin:0 auto;" /></a>
               </div><!--[if mso]></td><td width="310" valign="middle"><![endif]--><div class="col-text m-pad-top" style="display:inline-block; width:100%; max-width:310px; vertical-align:middle; font-size:18px;">
                 <div class="mobile-pad" style="padding:0 24px; text-align:left;">
                   <p class="m-center" style="margin:0 0 14px 0; font-family:'ArticulatCF','Helvetica Neue',Helvetica,Arial,sans-serif; font-weight:600; font-size:20px; line-height:25px; letter-spacing:0.6px; text-transform:uppercase; color:#F50A99; text-align:left;">The&nbsp;Eye</p>
@@ -178,9 +182,9 @@
         <tr>
           <td bgcolor="#F8F8F8" style="background-color:#F8F8F8; padding:28px 0 56px 0;">
             <div dir="rtl" style="width:100%; text-align:center; font-size:0;">
-              <!--[if mso]><table role="presentation" width="600" cellpadding="0" cellspacing="0" border="0" dir="rtl"><tr><td width="290" valign="middle" dir="ltr"><![endif]-->
-              <div class="col-img" dir="ltr" style="display:inline-block; width:100%; max-width:290px; vertical-align:middle;">
-                <a href="https://www.jonesroadbeauty.com/products/lip-recharge?utm_source=klaviyo&amp;utm_medium=email&amp;utm_campaign=2026-06-lightweight-essentials" target="_blank"><img src="https://air-prod.imgix.net/111842b2-f253-430f-bc55-6034446e6d94.jpg?fm=png&amp;bg-remove=true&amp;w=540&amp;h=540&amp;fit=fill&amp;fill=solid&amp;fill-color=00FFFFFF" alt="Lip Recharge in Petal with cooling metal applicator" width="290" height="290" class="img-product" style="width:100%; max-width:290px; height:auto; display:block; margin:0 auto;" /></a>
+              <!--[if mso]><table role="presentation" width="550" align="center" cellpadding="0" cellspacing="0" border="0" dir="rtl"><tr><td width="240" valign="middle" dir="ltr"><![endif]-->
+              <div class="col-img" dir="ltr" style="display:inline-block; width:100%; max-width:240px; vertical-align:middle;">
+                <a href="https://www.jonesroadbeauty.com/products/lip-recharge?utm_source=klaviyo&amp;utm_medium=email&amp;utm_campaign=2026-06-lightweight-essentials" target="_blank"><img src="https://air-prod.imgix.net/111842b2-f253-430f-bc55-6034446e6d94.jpg?fm=png&amp;bg-remove=true&amp;w=540&amp;h=540&amp;fit=fill&amp;fill=solid&amp;fill-color=00FFFFFF" alt="Lip Recharge in Petal with cooling metal applicator" width="240" height="240" class="img-product" style="width:100%; max-width:240px; height:auto; display:block; margin:0 auto;" /></a>
               </div><!--[if mso]></td><td width="310" valign="middle" dir="ltr"><![endif]--><div class="col-text m-pad-top" dir="ltr" style="display:inline-block; width:100%; max-width:310px; vertical-align:middle; font-size:18px;">
                 <div class="mobile-pad" style="padding:0 24px; text-align:left;">
                   <p class="m-center" style="margin:0 0 14px 0; font-family:'ArticulatCF','Helvetica Neue',Helvetica,Arial,sans-serif; font-weight:600; font-size:20px; line-height:25px; letter-spacing:0.6px; text-transform:uppercase; color:#F50A99; text-align:left;">The&nbsp;Lip</p>
